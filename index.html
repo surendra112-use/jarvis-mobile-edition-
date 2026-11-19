@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.A.R.V.I.S - HUD Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>J.A.R.V.I.S</h1>
+    <p>HUD EDITION • AUTONOMOUS AI</p>
+  </header>
+
+  <div class="jarvis-hud">
+    <div class="outer-ring"></div>
+    <div class="middle-ring"></div>
+    <div class="inner-core" id="orb-center"></div>
+    <div class="scan-line"></div>
+    <div class="core-text" id="core-status">SYSTEM ONLINE</div>
+  </div>
+
+  <div class="topbar-actions">
+    <button id="wake-btn" class="badge-btn">🎙️ WAKE: OFF</button>
+    <button id="key-btn" class="badge-btn">🔑 API KEY</button>
+    <button id="clear-btn" class="badge-btn danger">🗑️ CLEAR MEMORY</button>
+  </div>
+
+  <div class="status">
+    <h2>SYSTEM DIAGNOSTICS</h2>
+    <div class="row"><span>AI BRAIN</span><b class="on">ONLINE</b></div>
+    <div class="row"><span>AGENT & TOOLS</span><b class="on">15 ACTIVE</b></div>
+    <div class="row"><span>VOICE & VISION</span><b class="on">READY</b></div>
+  </div>
+
+  <div class="chat" id="chat"></div>
+
+  <div class="input-area">
+    <input id="msg" placeholder="Say 'Hey Jarvis' or type a command...">
+    <button id="send">SEND</button>
+    <button id="mic-btn">🎤</button>
+    <button id="cam-btn">📷</button>
+    <input id="img-input" type="file" accept="image/*" style="display:none">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
